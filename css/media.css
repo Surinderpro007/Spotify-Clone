@@ -1,0 +1,36 @@
+@media (max-width: 768px) {
+  .playlistSide{
+    position: absolute;
+    left: -504px;
+    transition: 0.8s;
+
+    width: 400px;
+    background: #a0c0a0;
+    height: 90vh;
+    z-index: 99;
+    border-radius: 0px 10px 10px 0px;
+        padding: 10px;
+   
+  }
+
+  .innerMusicSide{
+    width: 90vw;
+    height: 10vh;
+    position: absolute;
+
+  }
+  .hamberger{
+    display: block;
+    position: absolute;
+  }
+  .close{
+    position: absolute;
+    right: 15px;
+    display: block;
+  }
+  .playlistrightsection{
+    
+    flex-wrap: wrap;
+}
+  
+  }

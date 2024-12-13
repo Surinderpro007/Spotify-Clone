@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.container {
+    display: flex;
+}
+.hamberger, .close{
+    display: none;
+}
+
+.playlistSide {
+    width: 30vw;
+}
+
+.innerMusicSide {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 70vw;
+    position: relative;
+    top: 100%;
+
+}
+
+/* .musicbtnsSide {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 70vw;
+} */
+
+.playlist ul li {
+    border: 1px solid;
+    padding: 13px;
+    margin: 10px;
+    list-style: none;
+    border-radius: 5px;
+    position: relative;
+}
+
+.playlist ul li:after {
+    content: "";
+    position: absolute;
+    right: 13px;
+    background-image: url(../play.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25px;
+    width: 25px;
+    top: 10px;
+}
+
+.playlist ul li:before {
+    content: "";
+    padding: 0px 18px 0 0;
+    background-image: url(../music.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px 12px 0px 0px;
+}
+
+.musicbtnsSide .innerMusicSide img {
+    width: 30px;
+    display: flex;
+    padding: 10px;
+}
+/* .musicbtnsSide img {
+    width: 30px;
+    display: flex;
+    padding: 10px;
+} */
+
+.musicbtnsSide {
+    position: relative;
+    margin: 20px;
+}
+
+.seek {
+    border: 1px solid red;
+    height: auto;
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    background-color: red;
+    border-radius: 10px;
+    left: 0;
+}
+
+.circle{
+    height: 15px;
+    width: 15px;
+    background-color: black;
+    border-radius: 20px;
+    position: absolute;
+    bottom: -6px;
+    transition: left 0.5s;
+}
+
+.songsButtons{
+    display: flex;
+}
+
+
+
+.playlistrightsection{
+    width: auto;
+    display: flex;
+    gap: 20px;
+    
+}
+
+.cardImg img{
+    width: 200px;
+    border-radius: 8px;
+}
+.playlistrightsection .cardImg:hover{
+    background-color: rgba(233, 60, 60, 0.527);
+    transition: 0.6s ease-in-out;
+    box-shadow: 0px 0px 15px 0px rgba(142, 235, 142, 0.521);
+}
+
+.cardImg{
+        padding: 10px;
+        border: 1px solid #dcdbdb;  
+        border-radius: 10px;
+        background-color: rgba(143, 133, 153, 0.226);
+}
+
+.aboveBar{ 
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+}
+
+.volBtn{
+    display: flex;
+    align-items: center;
+}
